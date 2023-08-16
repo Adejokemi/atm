@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atm</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // Welcome user
+        let name = prompt("Enter your name");
+        alert(`Good Morning ${name}, and Welcome to Ajcity ATM
+        Enter to continue!`);
+
+        //enter pin
+        let pin = prompt("Enter your pin");
+        alert(`Welcome ${name}`);
+
+
+        //Wat do u want to do 
+        let action = +prompt(`What would you love to do today?
+        Please enter just number: 
+        1. Transfer
+        2. Check Balance
+        3. Withdraw
+        4. Enquiry
+        5. Self Service`);
+
+        // transfer Option
+        if(action == 1) {
+            +prompt(`Select Bank
+            1. Fcmb
+            2. Opay
+            3. Kuda
+            4. Vin Bank
+            4. Other Banks`);
+
+            let amount = +prompt(`Enter Amount:`);
+            alert(`You have Successfully sent N${amount}
+            Want to Perform another transaction?`);
+
+         //balance option
+        } else if(action == 2) {
+            alert(`You account balance is #3,000,000.00`);
+
+
+            //withdraw
+        } else if(action == 3) {
+            let amount = +prompt(`Enter Amount:`);
+
+            alert(`Take your cash 
+            Do you wish to perform another transaction?`);
+
+            //enquiry
+        } else if(action == 5) {
+            let enquiry = prompt(`Enter your message:`);
+            alert(`Your enquiry ...
+            ${enquiry}
+            Will be attended to within 24 hours, thank you for your patience!`);
+
+            //self service
+        } else if(action == 6) {
+            alert(`This service is currently unavailable!!`);
+
+        } else {
+            alert(`Select a valid option!`);
+        }
+
+
+    </script>
+</body>
+</html>
