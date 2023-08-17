@@ -11,13 +11,11 @@
     <script>
 
         // Welcome user
-        let name = prompt("Enter your name");
-        alert(`Good Morning ${name}, and Welcome to Ajcity ATM
+        alert(`Good Morning, and Welcome to Ajcity ATM
         Enter to continue!`);
 
         //enter pin
         let pin = prompt("Enter your pin");
-        alert(`Welcome ${name}`);
 
 
         //Wat do u want to do 
@@ -27,7 +25,7 @@
         2. Check Balance
         3. Withdraw
         4. Enquiry
-        5. Self Service`);
+        5. Change Pin`);
 
         // transfer Option
         if(action == 1) {
@@ -39,6 +37,7 @@
             4. Other Banks`);
 
             let amount = +prompt(`Enter Amount:`);
+
             alert(`You have Successfully sent N${amount}
             Want to Perform another transaction?`);
 
@@ -51,7 +50,8 @@
         } else if(action == 3) {
             let amount = +prompt(`Enter Amount:`);
 
-            alert(`Take your cash 
+
+            alert(`Please take your cash 
             Do you wish to perform another transaction?`);
 
             //enquiry
@@ -59,9 +59,9 @@
             let enquiry = prompt(`Enter your message:`);
             alert(`Your enquiry ...
             ${enquiry}
-            Will be attended to within 24 hours, thank you for your patience!`);
+            This service is currently unavailable, Visit our nearest branch!`);
 
-            //self service
+            //Change pin
         } else if(action == 6) {
             alert(`This service is currently unavailable!!`);
 
